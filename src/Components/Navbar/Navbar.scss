@@ -1,0 +1,62 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 1440px;
+    // min-width: 1440px;
+    background-color: rgba(0, 0, 0, 0.168);
+}
+.Navbar{
+    width: 100%;
+    max-width: 1440px;
+    // min-width: 1440px;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.168);
+
+    .Navbar-contents{
+        width: 90%;
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+        justify-content: space-between;
+        padding: 1.5rem 0;
+
+        &-inner{
+            display: flex;
+            // background-color: red;
+            width: 20rem;
+            justify-content: space-around;
+            align-items: center;
+            column-gap: 2rem;
+
+            .signInText{
+                color: #0FBB3F;
+                cursor: pointer;
+                font-size: 1.8rem;
+            }
+        }
+
+        .mainLogo{
+            width: 12rem;
+        }
+        .Menu{
+            list-style-type: none;
+            display: flex;
+            column-gap: 2rem;
+            font-size: 1.8rem;
+
+            li{
+                text-decoration: none;
+            }
+            &-Link{
+                text-decoration: none;
+                color: #fff;
+            }
+            
+        }
+        
+
+    }
+}

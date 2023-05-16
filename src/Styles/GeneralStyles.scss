@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,400;1,500;1,700;1,800&family=Source+Sans+3:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 55.5%;
+}
+body{
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+.header--1{
+    
+}
+.header--2{
+
+}
+.header--3{
+
+}
+
+.text--1{
+
+}
+.text--2{
+
+}
+.text--3{
+
+}
+
+.btn--1{
+    width: 11.4rem;
+    background-color: #0FBB3F;
+    color: white;
+    padding: 1.5rem 0;
+    border: none;
+    cursor: pointer;
+}
+.btn--1:hover{
+    background-color: #0fbb40c0;
+}
+.btn--2{
+    // width: 11.4rem;
+    background-color: #0FBB3F;
+    color: white;
+    padding: 1.3rem 2rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 2.5rem;
+    font-size: 1.2rem;
+}
+.btn--3{
+
+}
