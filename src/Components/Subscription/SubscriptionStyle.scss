@@ -1,0 +1,33 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.Subscription{
+    width: 100%;
+    max-width: 1440px;
+    margin: 20rem auto 5rem;
+    background-color: rgb(4, 85, 85);
+    padding: 5rem 0;
+
+    &Content{
+        width: 85%;
+        margin: 0 auto;
+        text-align: center;
+
+
+        &Item{
+            width: 75rem;
+            margin: 0 auto;
+        }
+        &Input{
+            width: 70rem;
+            padding: 2.5rem 4rem;
+            outline: none;
+            border: none;
+            border-radius: 2px;
+
+        }
+    }
+}

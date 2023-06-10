@@ -31,9 +31,9 @@ const NavbarIndex = () => {
               </Link>
             </ul>
           <div className='Navbar-contents-inner'>
-            <h5 className='signInText'>Sign in</h5>
+            <button className='btn--Signin'>Sign in</button>
             <Link to='/'>
-              <button className='btn--1'>Get Started</button>
+              <button className='btn--GetStarted1'>Get Started</button>
             </Link>
           </div>
 

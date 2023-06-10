@@ -17,13 +17,17 @@ body{
     
 }
 .header--2{
-
+    font-size: 5rem;
+    font-weight: 600;
 }
 .header--3{
 
 }
 
 .text--1{
+    color:  #676977;
+    font-size: 1.8rem;
+    line-height: 32px;
 
 }
 .text--2{
@@ -33,7 +37,7 @@ body{
 
 }
 
-.btn--1{
+.btn--GetStarted1{
     width: 11.4rem;
     background-color: #0FBB3F;
     color: white;
@@ -41,11 +45,11 @@ body{
     border: none;
     cursor: pointer;
 }
-.btn--1:hover{
+.btn--GetStarted1:hover{
     background-color: #0fbb40c0;
 }
-.btn--2{
-    // width: 11.4rem;
+.btn--GetStarted2{
+    width: 11.4rem;
     background-color: #0FBB3F;
     color: white;
     padding: 1.3rem 2rem;
@@ -54,6 +58,42 @@ body{
     border-radius: 2.5rem;
     font-size: 1.2rem;
 }
+.btn--Demo{
+    width: 15rem;
+    padding: 1.3rem 0;
+    border-radius: 2rem;
+    border: 1px solid rgba(211, 211, 211, 0.415);
+    font-size: 1.2rem;
+    font-weight: 600;
+    background-color: white;
+
+}
+.btn--Signin{
+    width: 12rem;
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: white;
+    padding: 1.3rem 0;
+    border-radius: 2px;
+    cursor: pointer;
+
+}
+.btn--Tours{
+    width: 13rem;
+    padding: .8rem 0;
+    color: #0FBB3F;
+    border: 1px solid #0FBB3F;
+    background-color: transparent;
+    font-size: 1.3rem;
+    font-weight: 800;
+    border-radius: 5px;
+}
 .btn--3{
 
+}
+.mbottom1 {
+    margin-bottom: 2rem;
+}
+.mbottom2 {
+    margin-bottom: 4rem;
 }
