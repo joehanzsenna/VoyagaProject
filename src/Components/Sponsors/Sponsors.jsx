@@ -9,13 +9,13 @@ import SponsorsIconAtlantic from '../../Assets/ComponentsAssets/SponsorsIconAtla
 const Sponsors = () => {
   return (
     <div className='Sponsors'>
-        <div className='SponsorsContents'>
-            <img src={SponsorsIconArik} alt="" />
-            <img src={SponsorsIconTranscorp} alt="" />
-            <img src={SponsorsIconJumia} alt="" />
-            <img src={SponsorsIconAirpeace} alt="" />
-            <img src={SponsorsIconAtlantic} alt="" />
-        </div>
+      <div className='SponsorsContents'>
+        <img src={SponsorsIconArik} alt="" className='SponsorsContentsImg' />
+        <img src={SponsorsIconTranscorp} alt="" className='SponsorsContentsImg' />
+        <img src={SponsorsIconJumia} alt="" className='SponsorsContentsImg' />
+        <img src={SponsorsIconAirpeace} alt="" className='SponsorsContentsImg' />
+        <img src={SponsorsIconAtlantic} alt="" className='SponsorsContentsImg' />
+      </div>
     </div>
   )
 }

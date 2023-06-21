@@ -1,65 +1,85 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@use "../../Styles/Utilities/functions" as fn;
+@import "../../Styles/Utilities/breakpoints";
+@import "../../Styles/Utilities/mixins";
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,400;1,500;1,700;1,800&family=Source+Sans+3:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
 }
 
-.Explore{
-    width: 100%;
-    max-width: 1440px;
-    margin: 10rem auto 0;
+.Explore {
+  width: 100%;
+  max-width: 1440px;
+  margin: 15rem auto 0;
 
-    &Contents{
+  &Contents {
+    width: 90%;
+    margin: 0 auto;
+
+    &Header {
+      width: 80%;
+      margin: 0 auto;
+
+      @include breakpoint-up("md") {
         width: 90%;
-        margin: 0 auto;
-
-        &Header{
-            width: 60%;
-
-        }
-
-        &Inner{
-            width: 100%;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: repeat(4,1fr);
-            justify-content: center;
-            align-items: center;
-            column-gap: 2rem;
-            padding: 10rem 0;
-
-            &Item{
-                position: relative;
-
-                &Img{
-                    width: 100%;
-                    height: 100%;
-                }
-
-            }
-        }
-
-        .InnerContent{
-            background-color: #fff;
-            width: 90%;
-            height: 10rem;
-            position: absolute;
-            transform: translate(-50%, -50%);
-            left: 50%;
-            bottom: -7rem;
-            padding: 2rem;
-        }
-        .ExploreText1{
-            color: #0FBB3F;
-            font-size: 1.3rem;
-            font-weight: 600;
-            margin-bottom: 1rem;
-        }
-        .ExploreText2{
-            color: #0F2454;
-            font-size: 1.6rem;
-            font-weight: 700;
-            margin-bottom: 1rem;
-        }
+      }
+      @include breakpoint-up("lg") {
+        width: 60%;
+      }
     }
+
+    &Inner {
+      width: 100%;
+      margin: 0 auto;
+      display: grid;
+      // grid-template-columns: repeat(4, 1fr);
+      // justify-content: center;
+      // align-items: center;
+      column-gap: 2rem;
+      padding: 5rem 0 10rem;
+
+      &Item {
+        position: relative;
+
+        &Img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+
+    .InnerContent {
+      background-color: #fff;
+      width: 90%;
+      height: 10rem;
+      position: absolute;
+      transform: translate(-50%, -50%);
+      left: 50%;
+      bottom: -7rem;
+      padding: 2rem;
+    }
+    .ExploreText1 {
+      color: #0fbb3f;
+      font-size: 1.3rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+    .ExploreText2 {
+      color: #0f2454;
+      font-size: 1.6rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+    .navArrowRight{
+      color: white;
+      font-size: 4rem;
+    }
+    .navArrowLeft{
+      color: #000;
+      font-size: 4rem;
+    }
+  }
 }

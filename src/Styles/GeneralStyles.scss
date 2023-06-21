@@ -1,99 +1,84 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,400;1,500;1,700;1,800&family=Source+Sans+3:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400&display=swap');
+@use "./Utilities/functions" as fn;
+@import "./Utilities//breakpoints";
+@import "./Utilities/mixins";
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,400;1,500;1,700;1,800&family=Source+Sans+3:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400&display=swap");
 
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-html{
-    font-size: 55.5%;
+html {
+  font-size: 55.5%;
 }
-body{
-    font-size: 16px;
-    font-family: 'Poppins', sans-serif;
+body {
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
 }
-.header--1{
-    
+.header--1 {
 }
-.header--2{
-    font-size: 5rem;
+.header--2 {
+    font-size: 3.5rem;
     font-weight: 600;
+    text-align: left;
+    font-family: 'Poppins';
+  @include breakpoint-up("md") {
+    font-size: 4rem;
+    font-weight: 600;
+  }
+  @include breakpoint-up("lg") {
+    font-size: 44px;
+    font-weight: 600;
+    text-align: center;
+  }
 }
-.header--3{
+.text--1 {
+  color: #676977;
+  font-size: 18px;
+  line-height: 32px;
+  text-align: left;
 
-}
-
-.text--1{
-    color:  #676977;
+   @include breakpoint-up("md") {
     font-size: 1.8rem;
-    line-height: 32px;
-
-}
-.text--2{
-
-}
-.text--3{
-
-}
-
-.btn--GetStarted1{
-    width: 11.4rem;
-    background-color: #0FBB3F;
-    color: white;
-    padding: 1.5rem 0;
-    border: none;
-    cursor: pointer;
-}
-.btn--GetStarted1:hover{
-    background-color: #0fbb40c0;
-}
-.btn--GetStarted2{
-    width: 11.4rem;
-    background-color: #0FBB3F;
-    color: white;
-    padding: 1.3rem 2rem;
-    border: none;
-    cursor: pointer;
-    border-radius: 2.5rem;
-    font-size: 1.2rem;
-}
-.btn--Demo{
-    width: 15rem;
-    padding: 1.3rem 0;
-    border-radius: 2rem;
-    border: 1px solid rgba(211, 211, 211, 0.415);
-    font-size: 1.2rem;
     font-weight: 600;
-    background-color: white;
 
+  }
+   @include breakpoint-up("lg") {
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-align: center;
+  }
 }
-.btn--Signin{
-    width: 12rem;
-    background-color: transparent;
-    border: 1px solid #fff;
-    color: white;
-    padding: 1.3rem 0;
-    border-radius: 2px;
-    cursor: pointer;
 
+.btn--GetStarted1:hover {
+  background-color: #0fbb40c0;
 }
-.btn--Tours{
-    width: 13rem;
-    padding: .8rem 0;
-    color: #0FBB3F;
-    border: 1px solid #0FBB3F;
-    background-color: transparent;
-    font-size: 1.3rem;
-    font-weight: 800;
-    border-radius: 5px;
+.btn--GetStarted2 {
+  width: 11.4rem;
+  background-color: #0fbb3f;
+  color: white;
+  padding: 1.3rem 2rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 2.5rem;
+  font-size: 1.2rem;
 }
-.btn--3{
-
+.btn--Tours {
+  width: 13rem;
+  padding: 0.8rem 0;
+  color: #0fbb3f;
+  border: 1px solid #0fbb3f;
+  background-color: transparent;
+  font-size: 1.3rem;
+  font-weight: 800;
+  border-radius: 5px;
+}
+.btn--3 {
 }
 .mbottom1 {
-    margin-bottom: 2rem;
+  margin-bottom: 2rem;
 }
 .mbottom2 {
-    margin-bottom: 4rem;
+  margin-bottom: 4rem;
 }
