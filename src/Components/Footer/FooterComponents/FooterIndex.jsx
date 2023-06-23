@@ -6,8 +6,8 @@ import FooterSection2 from './FooterSection2'
 const FooterIndex = () => {
   return (
     <div>
-        <FooterSection1/>
-        <FooterSection2/>
+        {/* <FooterSection1/>
+        <FooterSection2/> */}
     </div>
   )
 }

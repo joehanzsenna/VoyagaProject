@@ -7,7 +7,7 @@ import mainLogo from '../../Assets/HomepageAssets/MainLogo.png'
 const NavbarIndex = () => {
   return (
     <div className='containter'>
-      <div className='Navbar'> 
+      {/* <div className='Navbar'> 
         <div className='Navbar-contents'>
             <Link to='/'>
               <img src={mainLogo} alt="" className='mainLogo'/>
@@ -38,7 +38,7 @@ const NavbarIndex = () => {
           </div>
 
         </div>
-      </div>
+      </div> */}
     </div>
   )
 }
