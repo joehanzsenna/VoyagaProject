@@ -1,0 +1,40 @@
+@use "../../Styles/Utilities/functions" as fn;
+@import "../../Styles/Utilities/breakpoints";
+@import "../../Styles/Utilities/mixins";
+
+
+.topbar{
+  position: relative;
+   z-index:1;
+  &Contents{
+
+  }
+}
+.mainLogo {
+  width: 14rem;
+  z-index: -10000;
+}
+.navToggle {
+}
+.navToggleActive {
+}
+
+@media (max-width: 990px) {
+  .navToggle {
+    z-index: 1;
+    position: absolute;
+    top: 10rem;
+    left: -1000px;
+    background-color: rgba(48, 53, 48, 0.87);
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding: 8rem 0;
+    transition: .5s ease-in-out;
+  }
+  .navToggleActive {
+    left: 0;
+    transition: .5s ease-in-out;
+  }
+}
+

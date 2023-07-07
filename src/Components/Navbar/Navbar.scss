@@ -11,30 +11,36 @@
   width: 1440px;
   background-color: rgba(0, 0, 0, 0.168);
   padding: 3rem 0;
+  // z-index: 5;
 }
 .Navbar {
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
+  position: relative;
+  z-index: 2;
+  position: sticky;
+  top: 0;
+  left: 0;
   background: rgba(29, 41, 63, 0.12);
-  // background-color: red;
 
   &-contents {
     display: grid;
-    grid-template-columns: 0.3fr 1fr;
+    grid-template-columns: 0.2fr 1fr;
     margin: 0 auto;
     justify-content: space-around;
     align-items: center;
-    width: 85%;
+    width: 90%;
     padding: 3rem 0;
 
     @include breakpoint-down("md") {
-      width: 85%;
+      width: 90%;
       display: flex;
       justify-content: space-between;
       align-items: center;
     }
     @include breakpoint-down("lg") {
+      // width: 90%;
     }
 
     &-icon {
@@ -42,6 +48,7 @@
       cursor: pointer;
       color: white;
       font-size: 4rem;
+      z-index: 5;
 
       @include breakpoint-up("lg") {
         display: none;
@@ -51,11 +58,12 @@
   .navInner {
     width: 100%;
     position: relative;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr .4fr;
+    justify-content: center;
     align-items: center;
-    display: flex;
+    column-gap: 4rem;
+    padding: 0 .5rem;
 
     @include breakpoint-down("md") {
       // display: none;
@@ -73,14 +81,21 @@
       opacity: 1;
     }
     &-btns {
+      margin-left: 1rem;
       display: flex;
       column-gap: 3rem;
     }
   }
   .mainLogo {
-    width: 140px;
+    width: 14rem;
+
+  }
+  .mainLogoLink{
+    width: 14rem;
   }
   .navList {
+    width: 50rem;
+    padding: 0 3rem;
     list-style-type: none;
     display: flex;
     column-gap: 4rem;
@@ -94,10 +109,11 @@
 
     &-li {
       color: white;
-      font-size: 18px;
+      font-size: 17px;
+      // padding: 2px 2px;
     }
-    &-Link {
-    }
+    // &-Link {
+    // }
   }
 }
 

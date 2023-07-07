@@ -10,8 +10,8 @@ const NavbarIndex = () => {
   const [toggle, setToggle] = useState('navInner');
 
   function menuClick (){
-    if (toggle === "navInnerActive navInner") {
-      setToggle("navInnerAvtive navInner");
+    if (toggle === "navInner") {
+      setToggle("navInnerActive navInner");
     } else {
       setToggle("navInner");
     }
@@ -21,10 +21,10 @@ const NavbarIndex = () => {
     <div className="containter">
       <div className="Navbar">
         <div className="Navbar-contents">
-          <Link to="/">
+          <Link to="/" className="mainLogoLink">
             <img src={mainLogo} alt="" className="mainLogo" />
           </Link>
-          <ul className={toggle}>
+          <div className={toggle}>
             <div className="navList">
               <Link to="/" className="navList-Link">
                 <li className="navList-li">Home</li>
@@ -71,12 +71,9 @@ const NavbarIndex = () => {
                 </Button>
               </Link>
             </div>
-          </ul>
+          </div>
           <div className="Navbar-contents-icon">
-            <FiMenu
-              style={{ cursor: "pointer" }}
-              onClick={menuClick}
-            />
+            <FiMenu style={{ cursor: "pointer" }} onClick={menuClick} />
           </div>
         </div>
       </div>

@@ -15,7 +15,7 @@
 .HomeSec1 {
   width: 100%;
   max-width: 1440px;
-  margin: 0 auto;
+  margin: -13rem auto 0;
 
   @include breakpoint-up("md") {
     // width: 20%;
@@ -25,11 +25,10 @@
   }
 
   &Image {
-    position: relative;
-    top: -4rem;
+    position: absolute;
+    top: -5rem;
     left: 0;
     width: 100%;
-    object-position: top;
     object-fit: cover;
     height: 903px;
   }
@@ -37,8 +36,16 @@
     position: absolute;
     z-index: -1;
     width: 38%;
+    right: 6rem;
+      bottom: -1rem;
     display: none;
 
+    @include breakpoint-up("md") {
+      display: block;
+      right: -2rem;
+      bottom: 1rem;
+      // width: 20%;
+    }
     @include breakpoint-up("lg") {
       display: block;
       right: -2rem;
@@ -51,8 +58,8 @@
     position: relative;
     width: 100%;
     height: 903px;
-    margin-top: -8rem;
-    z-index: -1;
+    margin-top: -5rem;
+    background: url(../../../Assets/HomepageAssets/HomeSec1Image.png);
     @include breakpoint-up("lg") {
       // width: 20%;
     }
@@ -66,32 +73,33 @@
       // background-color: red;
 
       @include breakpoint-up("md") {
-        width: 95rem;
+        width: 85rem;
         left: 50%;
         top: 37%;
       }
       @include breakpoint-up("lg") {
-        width: 105rem;
-        // left: 50%;
-        // top: 37%;
+        width: 100rem;
+        left: 50%;
+        top: 33%;
       }
     }
     &Inner h1 {
       font-family: "Poppins", sans-serif;
       font-style: normal;
-      font-size: 28px;
+      font-size: 29px;
       font-weight: 700;
       color: #fff;
-      text-align: left;
+      text-align: center;
 
       @include breakpoint-up("md") {
-        font-size: 65px;
+        font-size: 55px;
         line-height: 90px;
         letter-spacing: 2px;
         text-align: center;
       }
       @include breakpoint-up("lg") {
-        font-size: 70px;
+        font-size: 66px;
+         font-weight: 700;
         // line-height: 90px;
         // letter-spacing: 2px;
         // text-align: center;
@@ -99,11 +107,10 @@
     }
 
     &Form {
-      z-index: 5;
       position: absolute;
       transform: translate(-50%, -50%);
       left: 50%;
-      bottom: 26%;
+      bottom: 30%;
       width: 90%;
       background-color: #ffffff33;
       padding: 2.2rem 1rem;
@@ -125,7 +132,6 @@
         border-radius: 7px;
         border: none;
         outline: none;
-        z-index: 5;
         @include breakpoint-up("md") {
           width: 75%;
           border-radius: 7px 0 0 7px;
@@ -140,7 +146,6 @@
         border-radius: 0 7px 7px 0;
         font-size: 1.8rem;
         cursor: pointer;
-        z-index: 2;
         @include breakpoint-up("md") {
           width: 25%;
           flex-direction: row;
