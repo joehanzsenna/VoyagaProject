@@ -1,0 +1,19 @@
+.aboutSection4{
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1440px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    // gap: 20px;
+    padding-top: 10rem;
+
+      
+    @media (min-width:768px) {
+        justify-content: space-around;
+        // gap: 0;
+        
+    }
+     
+}
