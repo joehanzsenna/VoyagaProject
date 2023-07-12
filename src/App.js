@@ -11,14 +11,14 @@ function App() {
   return (
     <div>
       <BrowserRouter>
-            {/* <NavbarIndex/> */}
+            <NavbarIndex/>
         <Routes>
             <Route path='/' element={<HomeIndex/>}/>
             <Route path='/tours' element={<ToursIndex/>}/>
             <Route path='/about' element={<AboutIndex/>}/>
             <Route path='/contact' element={<ContactsIndex/>}/>
         </Routes>
-          {/* <FooterIndex/> */}
+          <FooterIndex/>
       </BrowserRouter>
     </div>
   );
