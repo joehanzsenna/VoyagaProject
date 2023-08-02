@@ -11,7 +11,7 @@ function App() {
   return (
     <div>
       <BrowserRouter>
-            <NavbarIndex/>
+            {/* <NavbarIndex/> */}
         <Routes>
             <Route path='/' element={<HomeIndex/>}/>
             <Route path='/tours' element={<ToursIndex/>}/>
