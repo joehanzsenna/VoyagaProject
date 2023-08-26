@@ -1,11 +1,10 @@
 import React from "react";
 import { useState } from "react";
 import { Box, Button, Text } from "@chakra-ui/react";
-import mainLogo from '../../Assets/HomepageAssets/MainLogo.png'
+import mainLogo from "../../Assets/HomepageAssets/MainLogo.png";
 import { Link } from "react-router-dom";
 import { FiMenu } from "react-icons/fi";
-import './TopbarStyle.scss'
-
+import "./TopbarStyle.scss";
 
 const TopbarIndex = () => {
   const [toggle, setToggle] = useState("navToggle");
@@ -31,7 +30,7 @@ const TopbarIndex = () => {
         display={"flex"}
         justifyContent={"space-between"}
         alignItems={"center"}
-        p={"3rem 0"}
+        p={"2.5rem 0"}
         className="topbarContents"
       >
         <Box>
