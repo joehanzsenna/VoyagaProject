@@ -1,0 +1,10 @@
+@use "../../Styles/Utilities/functions" as fn;
+@import "../../Styles/Utilities/breakpoints";
+@import "../../Styles/Utilities/mixins";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+}

@@ -1,0 +1,45 @@
+@use "../../Styles/Utilities/functions" as fn;
+@import "../../Styles/Utilities/breakpoints";
+@import "../../Styles/Utilities/mixins";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.Sponsors {
+  width: 100%;
+  max-width: 1440px;
+  margin: 2rem auto;
+  @include breakpoint-up("md") {
+    font-size: 4rem;
+    font-weight: 600;
+    margin: 8rem auto;
+  }
+
+  &Contents {
+    width: 85%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+    column-gap: 2rem;
+    padding: 2rem 0;
+    @include breakpoint-up("md") {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      row-gap: 3rem;
+      padding: 2rem 0;
+    }
+
+    &Img {
+      margin: 2rem 0;
+      @include breakpoint-up("md") {
+        width: 15%;
+      }
+    }
+  }
+}

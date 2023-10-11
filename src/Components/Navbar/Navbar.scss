@@ -1,62 +1,124 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+@use "../../Styles/Utilities/functions" as fn;
+@import "../../Styles/Utilities/breakpoints";
+@import "../../Styles/Utilities/mixins";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-.container{
-    width: 1440px;
-    // min-width: 1440px;
-    background-color: rgba(0, 0, 0, 0.168);
+.container {
+  width: 1440px;
+  background-color: rgba(0, 0, 0, 0.168);
+  padding: 3rem 0;
+  // z-index: 5;
 }
-.Navbar{
-    width: 100%;
-    max-width: 1440px;
-    // min-width: 1440px;
+.Navbar {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+  position: sticky;
+  top: 0;
+  left: 0;
+  background: rgba(29, 41, 63, 0.12);
+
+  &-contents {
+    display: grid;
+    grid-template-columns: 0.2fr 1fr;
     margin: 0 auto;
-    background-color: rgba(0, 0, 0, 0.168);
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    padding: 3rem 0;
 
-    .Navbar-contents{
-        width: 90%;
-        display: flex;
-        align-items: center;
-        margin: 0 auto;
-        justify-content: space-between;
-        padding: 1.5rem 0;
-
-        &-inner{
-            display: flex;
-            // background-color: red;
-            width: 20rem;
-            justify-content: space-around;
-            align-items: center;
-            column-gap: 2rem;
-
-            .signInText{
-                color: #0FBB3F;
-                cursor: pointer;
-                font-size: 1.8rem;
-            }
-        }
-
-        .mainLogo{
-            width: 12rem;
-        }
-        .Menu{
-            list-style-type: none;
-            display: flex;
-            column-gap: 2rem;
-            font-size: 1.8rem;
-
-            li{
-                text-decoration: none;
-            }
-            &-Link{
-                text-decoration: none;
-                color: #fff;
-            }
-            
-        }
-        
-
+    @include breakpoint-down("md") {
+      width: 90%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
+    @include breakpoint-down("lg") {
+      // width: 90%;
+    }
+
+    &-icon {
+      display: block;
+      cursor: pointer;
+      color: white;
+      font-size: 4rem;
+      z-index: 5;
+
+      @include breakpoint-up("lg") {
+        display: none;
+      }
+    }
+  }
+  .navInner {
+    width: 100%;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr .4fr;
+    justify-content: center;
+    align-items: center;
+    column-gap: 4rem;
+    padding: 0 .5rem;
+
+    @include breakpoint-down("md") {
+      // display: none;
+      position: absolute;
+      left: -1000px;
+      top: 10rem;
+      background-color: grey;
+      flex-direction: column;
+    }
+    // @include breakpoint-down("lg") {
+    // }
+    &Active {
+      position: absolute;
+      left: 0;
+      opacity: 1;
+    }
+    &-btns {
+      margin-left: 1rem;
+      display: flex;
+      column-gap: 3rem;
+    }
+  }
+  .mainLogo {
+    width: 14rem;
+
+  }
+  .mainLogoLink{
+    width: 14rem;
+  }
+  .navList {
+    width: 50rem;
+    padding: 0 3rem;
+    list-style-type: none;
+    display: flex;
+    column-gap: 4rem;
+
+    @include breakpoint-down("md") {
+      // width: 85%;
+    }
+    @include breakpoint-down("lg") {
+      // width: 85%;
+    }
+
+    &-li {
+      color: white;
+      font-size: 17px;
+      // padding: 2px 2px;
+    }
+    // &-Link {
+    // }
+  }
+}
+
+@include breakpoint-up("md") {
+}
+
+@include breakpoint-up("lg") {
 }
